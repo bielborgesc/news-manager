@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="cabecalho">
+        <h1>Notícias Fresquinhas</h1>
+    </header>
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="h2"></h2>
+            <div id="principal">
+                <form action="POST">
+                    <label for="categoria">Categoria</label>
+                    <select name="categorias" id="categoria">
+                    </select>
+                    <label for="titulo">Título da Notícia</label>
+                    <input type="text" id="titulo">
+                    <label for="subtitulo">Subtítulo da Notícia</label>
+                    <input type="text" id="subtitulo">
+                    <label for="conteudo">Conteúdo da Notícia</label>
+                    <textarea name="contend" id="conteudo" cols="30" rows="10"></textarea>
+                </form>
+                <button class="cadastrar" type="submit">Cadastrar</button>
+            </div>
+            <div id="exibir">
+                <h2 class="h2"></h2>
+            </div>
+            <div id="edicao">
+                <h2 class="h2"></h2>
+                <form action="POST">
+                    <label for="categoria">Categoria</label>
+                    <select name="categorias" id="editar-categoria"></select>
+                    <label for="titulo">Título da Notícia</label>
+                    <input type="text" id="editar-titulo">
+                    <label for="subtitulo">Subtítulo da Notícia</label>
+                    <input type="text" id="editar-subtitulo">
+                    <label for="conteudo">Conteúdo da Notícia</label>
+                    <textarea name="contend" id="editar-conteudo" cols="30" rows="10"></textarea>
+                </form>
+                <button class="cadastrar" type="submit" id="enviar-edit">Editar</button>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <h3>&copy 2021 Noticias Fresquinhas. Todos os direitos reservados. Desenvolvido por Gabriel Borges</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    grid-area: cabecalho;
+}
+nav{
+    grid-area: menu;
+}
+section{
+    grid-area: conteudo;
+}
+footer{
+    grid-area: rodape;
+}
+body{
+    background-color: #778da9;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'menu principal'
+    'rodape rodape';
+}
+
+#cabecalho{
+    background-color: #0d1b2a;
+    text-align: center;
+    padding: 20px;
+    color: #e0e1dd;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+}
+
+#menu{
+    background-color: #415a77;
+    text-align: center;
+    color: #e0e1dd;
+    font-family: 'Cinzel', serif;
+    margin: 30px;
+    border-radius: 10%;
+    margin-bottom: 80%;
+}
+
+#rodape{
+    background-color: #0d1b2a;
+    text-align: center;
+    padding: 40px;
+    color: #e0e1dd;
+    font-size: 12px;
+    font-family: 'Cinzel', serif;
+    margin-top: 100px;
+}
+
+#menu h2{
+    margin: 20px;
+}
+#menu li:hover{
+    color: #0d1b2a;
+    background-color: #e0e1dd;
+}
+
+#menu li{
+    padding: 5px;
+    display: block;
+    border-bottom: solid 1px #e0e1dd;
+}
+#menu ul{
+    padding: 0px 50px;
+    margin: 10px;
+}
+
+#principal{
+    margin-top: 100px;
+    display: none;
+}
+
+#principal label{
+    display: block;
+    margin-left: 2%;
+    padding: 5px;
+    width: 90%;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+    font-size: 20px;
+}
+#principal input,#principal textarea, #principal select{
+    display: block;
+    margin-left: 2%;
+    padding: 5px;
+    width: 90%;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+    background-color: #e0e1dd;
+    font-size: 15px;
+    border: none;
+}
+#principal input:hover,#principal textarea:hover{
+    display: block;
+    margin-left: 2%;
+    padding: 5px;
+    width: 90%;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+    background-color: #e0e1dd;
+    font-size: 15px;
+    border: solid 5px #415a77;
+}
+
+button.cadastrar{
+    border: none;
+    margin: 20px;
+    padding: 15px;
+    font-size: 100%;
+    font-family: 'Special Elite', cursive;
+    background-color: #415a77;
+    color: #e0e1dd;
+    box-shadow: 5px 3px 3px black;
+}
+
+button.cadastrar:hover{
+    border: none;
+    margin: 20px;
+    padding: 15px;
+    font-size: 100%;
+    font-family: 'Special Elite', cursive;
+    background-color: #e0e1dd;
+    color: #415a77;
+    box-shadow: none;
+}
+
+.h2{
+    margin: 20px;
+    text-align: center;
+    color: #0d1b2a;
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;
+    position: relative;
+    display: none;
+    margin-right: 10%;
+}
+
+#exibir{
+    margin-top: 10px;
+    display: none;
+    width: 90%;
+}
+
+h3.dados{
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+}
+p.dados{
+    border-bottom: solid 1px #e0e1dd;
+    padding-left: 50px;
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    color: #e0e1dd;
+}
+#edicao{
+    display: none;
+    margin-top: 100px;
+}
+#edicao label{
+    display: block;
+    margin-left: 2%;
+    padding: 5px;
+    width: 90%;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+    font-size: 20px;
+}
+#edicao input,#edicao textarea, #edicao select{
+    display: block;
+    margin-left: 2%;
+    padding: 5px;
+    width: 90%;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+    background-color: #e0e1dd;
+    font-size: 15px;
+    border: none;
+}
+#edicao input:hover,#edicao textarea:hover{
+    display: block;
+    margin-left: 2%;
+    padding: 5px;
+    width: 90%;
+    font-family: 'Special Elite', cursive;
+    color: #0d1b2a;
+    background-color: #e0e1dd;
+    font-size: 15px;
+    border: solid 5px #415a77;
+}
